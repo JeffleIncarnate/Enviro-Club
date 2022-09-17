@@ -58,7 +58,7 @@ body {
 .EVC__Header-Navbar > ul li:hover {
     background-color: var(--grey);
 }
-
+src/public
 .EVC__Header-Navbar > ul li:hover::after {
     width: 80%;
     left: 10%;

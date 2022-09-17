@@ -10,6 +10,10 @@ const impact = require("./src/routes/imapct.js")
 const newsandnotices = require("./src/routes/newsandnotices.js")
 
 app.use(express.static(path.join(__dirname+"/src/public")))
+app.use(express.static(path.join(__dirname+"/src/public/images")))
+app.use(express.static(path.join(__dirname+"/src/public/stylesheets")))
+app.use(express.static(path.join(__dirname+"/src/public/templates")))
+
 
 // serving the routes
 app.use("/contact", contact)
@@ -19,10 +23,6 @@ app.use("/newsandnotices", newsandnotices)
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname+"/src/public/templates/index.html"))
-})
-
-app.get("/", (req, res) => {
-    res.sendFile()
 })
 
 app.listen(port, () => {
