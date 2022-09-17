@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--offwhite);
+}
+
+:root {
+    --grey: #1f2421;
+    --accent: #386641;
+    --accent2: #588157;
+    --offwhite: #e8f1f2;
+    --link: #06c;
+}
+
+/* Nav Bar */
+.EVC__Header-Navbar {
+    width: 100%;
+    background-color: var(--accent);
+    display: flex;
+    height: 87px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    filter: opacity(0.95);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.EVC__Header-Navbar > a img {
+    margin-left: 4rem;
+}
+
+.EVC__Header-Navbar > ul {
+    margin: 0 4rem 0 0;
+}
+
+.EVC__Header-Navbar > ul li {
+    display: inline-block;
+    padding: 2rem;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Header-Navbar > ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    margin: 0;
+    background: var(--accent2);
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Header-Navbar > ul li:hover {
+    background-color: var(--grey);
+}
+
+.EVC__Header-Navbar > ul li:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+.EVC__Header-Navbar > ul li a {
+    color: var(--offwhite);
+    text-decoration: none;
+}
+
+/* Splash Page */
+.EVC__Header-SpalashPage {
+    margin-top: 87px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/DeskSplashPage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.EVC__Header-SpalashPage div {
+    width: 30%;
+    padding: 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--accent);
+    color: var(--offwhite);
+    transition: 0.4s ease-in-out;
+    filter: opacity(0.8);
+}
+
+.EVC__Header-SpalashPage div:hover {
+    filter: opacity(1);
+}
+
+.EVC__Header-SpalashPage div h1 {
+    font-size: 3rem;
+}
+
+.EVC__Header-SpalashPage div p {
+    font-size: 1.2rem;
+}
+
+/* MAIN */
+/* Form */
+.EVC__Main-FormWraper {
+    width: 60%;
+    margin: 5rem 00px 5rem 20%;
+    background-color: var(--accent2);
+    border-radius: 10px 3rem 10px 3rem;
+    color: var(--offwhite);
+}
+
+.EVC__Main-FormWraper h2 {
+    font-size: 3rem;
+}
+
+form {
+    padding: 1rem;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 2rem;
+    margin-top: 1.7rem;
+    font-weight: 700;
+}
+
+#fname,
+#lname,
+#pnumber,
+#email {
+    width: 100%;
+    margin: 0.5rem;
+    border-radius: 0.1rem 0.5rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2.5px var(--offwhite) solid;
+    background: transparent;
+}
+
+form textarea {
+    width: 100%;
+    height: 7rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 2px var(--offwhite) solid;
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Place Holders */
+#fname::placeholder,
+#lname::placeholder,
+#pnumber::placeholder,
+#email::placeholder,
+#message::placeholder {
+    color: var(--offwhite);
+    padding: 0.5rem;
+}
+
+/* Submit */
+#submit {
+    width: 80%;
+    height: 2rem;
+    color: var(--offwhite);
+    background-color: transparent;
+    border: 2px var(--offwhite) solid;
+    margin: 1rem 0 1.4rem 10%;
+    transition: all 0.3s ease 0s;
+    border-radius: 0.4rem;
+}
+
+#submit:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Footer */
+.EVC__Footer {
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--accent2);
+    color: var(--offwhite);
+}
+
+.EVC__Footer-Col h3 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.EVC__Footer-Col > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.EVC__Footer-Col > ul li {
+    margin-left: 2rem;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Footer-Col > ul li > a {
+    color: var(--offwhite);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Footer-Col > ul li > a:hover {
+    color: var(--grey);
+}
+
+.EVC__Footer-Col > ul li:hover {
+    transform: translate(10px, 0px);
+}
+
+/* Footer Social Links */
+.EVC__Footer-Col-Social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.EVC__Footer-Col-Social > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.EVC__Footer-Col-Social > ul li {
+    margin: 1rem 0 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.EVC__Footer-Col-Social > ul li a i {
+    font-size: 2rem;
+}
+
+.EVC__Footer-Col-Social > ul li:hover {
+    transform: translate(0, -10px);
+}

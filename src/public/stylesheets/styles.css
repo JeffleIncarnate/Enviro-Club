@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--offwhite);
+}
+
+:root {
+    --grey: #1f2421;
+    --accent: #386641;
+    --accent2: #588157;
+    --offwhite: #e8f1f2;
+    --link: #06c;
+}
+
+/* Nav Bar */
+.EVC__Header-Navbar {
+    width: 100%;
+    background-color: var(--accent);
+    display: flex;
+    height: 87px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    filter: opacity(0.95);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.EVC__Header-Navbar > a img {
+    margin-left: 4rem;
+}
+
+.EVC__Header-Navbar > ul {
+    margin: 0 4rem 0 0;
+}
+
+.EVC__Header-Navbar > ul li {
+    display: inline-block;
+    padding: 2rem;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Header-Navbar > ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    margin: 0;
+    background: var(--accent2);
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Header-Navbar > ul li:hover {
+    background-color: var(--grey);
+}
+
+.EVC__Header-Navbar > ul li:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+.EVC__Header-Navbar > ul li a {
+    color: var(--offwhite);
+    text-decoration: none;
+}
+
+/* Splash Page */
+.EVC__Header-SpalashPage {
+    margin-top: 87px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/SplashPageImg.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.EVC__Header-SpalashPage div {
+    width: 30%;
+    padding: 1.5rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--accent);
+    color: var(--offwhite);
+    transition: 0.4s ease-in-out;
+    filter: opacity(0.8);
+}
+
+.EVC__Header-SpalashPage div:hover {
+    filter: opacity(1);
+}
+
+.EVC__Header-SpalashPage div h1 {
+    font-size: 3rem;
+}
+
+.EVC__Header-SpalashPage div p {
+    font-size: 1.2rem;
+}
+
+/* MAIN */
+/* Impact */
+.EVC__Main-Impact {
+    width: 100%;
+}
+
+/* Stream Monitoring */
+.EVC__Main-Impact__Stream {
+    color: var(--offwhite);
+    border-radius: 0 2.5rem 2.5rem 0;
+    width: 98%;
+    margin-right: 2%;
+    background-color: var(--accent2);
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.EVC__Main-Impact__Stream div > h2 {
+    font-size: 3rem;
+}
+
+.EVC__Main-Impact__Stream div > p {
+    font-size: 1.5rem;
+}
+
+.EVC__Main-Impact__Stream div > a {
+    font-size: 1.5rem;
+    color: var(--offwhite);
+}
+
+.EVC__Main-Impact__Stream img {
+    max-width: 40rem;
+    border-radius: 5px;
+}
+
+/* Pest Management */
+.EVC__Main-Impact__Pest {
+    border-radius: 2.5rem 0 0 2.5rem;
+    color: var(--offwhite);
+    width: 98%;
+    margin-left: 2%;
+    padding: 1.5rem 0 1.5rem 0;
+    background-color: var(--accent2);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+}
+
+.EVC__Main-Impact__Pest div > h2 {
+    font-size: 3rem;
+}
+
+.EVC__Main-Impact__Pest div > p {
+    font-size: 1.5rem;
+}
+
+.EVC__Main-Impact__Pest div > a {
+    font-size: 1.5rem;
+    color: var(--offwhite);
+}
+
+.EVC__Main-Impact__Pest img {
+    width: 38rem;
+    border-radius: 5px;
+}
+
+/* About Us */
+.EVC__Main-AboutUs {
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7rem 0 7rem 15%;
+}
+
+.EVC__Main-AboutUs h2 {
+    width: 50%;
+    font-size: 4rem;
+}
+
+.EVC__Main-AboutUs p {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* Footer */
+.EVC__Footer {
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--accent2);
+    color: var(--offwhite);
+}
+
+.EVC__Footer-Col h3 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.EVC__Footer-Col > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.EVC__Footer-Col > ul li {
+    margin-left: 2rem;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Footer-Col > ul li > a {
+    color: var(--offwhite);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.EVC__Footer-Col > ul li > a:hover {
+    color: var(--grey);
+}
+
+.EVC__Footer-Col > ul li:hover {
+    transform: translate(10px, 0px);
+}
+
+/* Footer Social Links */
+.EVC__Footer-Col-Social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.EVC__Footer-Col-Social > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.EVC__Footer-Col-Social > ul li {
+    margin: 1rem 0 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.EVC__Footer-Col-Social > ul li a i {
+    font-size: 2rem;
+}
+
+.EVC__Footer-Col-Social > ul li:hover {
+    transform: translate(0, -10px);
+}
