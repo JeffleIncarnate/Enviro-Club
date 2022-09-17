@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const path = require("path")
-let port = 3000 || process.env.PORT
+let port = 4000 || process.env.PORT
 
 // route vars
 const contact = require("./src/routes/contact.js")
@@ -9,7 +9,7 @@ const about = require("./src/routes/about.js")
 const impact = require("./src/routes/imapct.js")
 const newsandnotices = require("./src/routes/newsandnotices.js")
 
-app.use(express.static("src/public"))
+app.use(express.static(path.join(__dirname+"/src/public")))
 
 // serving the routes
 app.use("/contact", contact)
