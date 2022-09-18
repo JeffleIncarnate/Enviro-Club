@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const path = require("path")
+const cors = require("cors")
 let port = 3000 || process.env.PORT
 
 // route vars
@@ -10,6 +11,7 @@ const impact = require("./src/routes/imapct.js")
 const newsandnotices = require("./src/routes/newsandnotices.js")
 
 app.use(express.static(path.join(__dirname+"/src/public")))
+app.use(cors())
 
 // serving the routes
 app.use("/contact", contact)
