@@ -113,6 +113,7 @@ body {
     background-color: var(--accent2);
     border-radius: 10px 3rem 10px 3rem;
     color: var(--offwhite);
+    text-align: center;
 }
 
 .EVC__Main-FormWraper h2 {
