@@ -109,7 +109,7 @@ body {
 /* Form */
 .EVC__Main-FormWraper {
     width: 60%;
-    margin: 5rem 00px 5rem 20%;
+    margin: 5rem 0px 5rem 20%;
     background-color: var(--accent2);
     border-radius: 10px 3rem 10px 3rem;
     color: var(--offwhite);
