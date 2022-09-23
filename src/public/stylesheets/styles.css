@@ -264,6 +264,7 @@ body {
     justify-content: space-evenly;
     background-color: var(--accent2);
     color: var(--offwhite);
+    flex-wrap: wrap;
 }
 
 .EVC__Footer-Col h3 {
@@ -338,6 +339,11 @@ body {
         width: 45%;
     }
 
+    .EVC__Main-AboutUs {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     /* H2's, p's and a's */
     .EVC__Main-Impact__Stream div > h2,
     .EVC__Main-Impact__Pest div > h2 {
@@ -362,6 +368,7 @@ body {
         margin-right: 0;
         margin-left: 0;
         border-radius: 1rem;
+        text-align: center;
     }
 
     .cta {
@@ -376,9 +383,22 @@ body {
     }
 
     .EVC__Main-AboutUs {
-        width: 99%;
-        margin: 7rem 0;
+        width: auto;
+        margin: 7rem 0px;
     }
+
+    .EVC__Main-AboutUs h2 {
+        width: auto;
+        font-size: 3.5rem;
+    }
+
+    .EVC__Main-AboutUs p {
+        width: 50%;
+        font-size: 1.1rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 875px) {
@@ -386,5 +406,57 @@ body {
     .EVC__Main-Impact__Pest {
         flex-direction: column;
         border-radius: 1rem;
+    }
+
+    .EVC__Main-Impact__Stream img,
+    .EVC__Main-Impact__Pest img {
+        margin: 2rem 0;
+        max-width: 70%;
+    }
+
+    .EVC__Header-SpalashPage div {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .EVC__Footer-Col {
+        width: 50%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .EVC__Footer-Col > ul li {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .EVC__Main-AboutUs {
+        flex-direction: column;
+    }
+
+    .EVC__Main-AboutUs h2 {
+        width: 90%;
+        height: 0.5rem;
+    }
+
+    .EVC__Main-AboutUs p {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .EVC__Header-SpalashPage div {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .EVC__Footer-Col {
+        width: 100%;
     }
 }
