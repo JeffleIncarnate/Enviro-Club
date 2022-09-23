@@ -69,6 +69,62 @@ body {
     text-decoration: none;
 }
 
+.cta {
+    display: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Side Nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000000;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.sidenav a {
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--offwhite);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--accent2);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3rem;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
 /* Splash Page */
 .EVC__Header-SpalashPage {
     margin-top: 87px;
@@ -266,4 +322,69 @@ body {
 
 .EVC__Footer-Col-Social > ul li:hover {
     transform: translate(0, -10px);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1342px) {
+    .EVC__Main-Impact__Pest img,
+    .EVC__Main-Impact__Stream img{
+        width: 30rem;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .EVC__Header-SpalashPage div {
+        width: 45%;
+    }
+
+    /* H2's, p's and a's */
+    .EVC__Main-Impact__Stream div > h2,
+    .EVC__Main-Impact__Pest div > h2 {
+        font-size: 2.5rem;
+    }
+
+    .EVC__Main-Impact__Stream div > p,
+    .EVC__Main-Impact__Pest div > p{
+        font-size: 1rem;
+    }
+
+    .EVC__Main-Impact__Stream div > a,
+    .EVC__Main-Impact__Pest div > a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .EVC__Main-Impact__Stream,
+    .EVC__Main-Impact__Pest {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 1rem;
+    }
+
+    .cta {
+        color: var(--offwhite);
+        display: block;
+        margin-right: 5%;
+        font-size: 1.7rem;
+    }
+
+    .EVC__Header-Navbar > ul {
+        display: none;
+    }
+
+    .EVC__Main-AboutUs {
+        width: 99%;
+        margin: 7rem 0;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .EVC__Main-Impact__Stream,
+    .EVC__Main-Impact__Pest {
+        flex-direction: column;
+        border-radius: 1rem;
+    }
 }

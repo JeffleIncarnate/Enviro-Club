@@ -14,6 +14,7 @@
             src="https://kit.fontawesome.com/866b8b01f2.js"
             crossorigin="anonymous"
     ></script>
+    <script src="../js/sidenav.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -33,7 +34,34 @@
             <li><a href="/about">About Us</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
+
+        <div class="cta">
+            <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
     </nav>
+
+    <!-- Side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+        >
+        <a
+                onclick="closeNav()"
+                target="_blank"
+                href="https://github.com/Dhruv-Rayat1?tab=repositories"
+        >Code</a
+        >
+        <a
+                onclick="closeNav()"
+                target="_blank"
+                href="https://dhruv-rayat.itch.io/"
+        >Games</a
+        >
+        <a onclick="closeNav()" href="#ongoing_projects">Ongoing Projects</a>
+        <a onclick="closeNav()" href="#quotes">Quotes</a>
+        <a onclick="closeNav()" href="#timeline">TimeLine</a>
+        <a onclick="closeNav()" href="#footer">Contact</a>
+    </div>
 
     <!-- SPLASH PAGE -->
     <div class="EVC__Header-SpalashPage">
