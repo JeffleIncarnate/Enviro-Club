@@ -14,6 +14,11 @@
             rel="icon"
             href="https://www.ormiston.school.nz/images/favicon.png?v=20141117"
     />
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    </script>
+    <script defer src="../js/chart.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -44,7 +49,19 @@
 </header>
 
 <!-- Main -->
-<main></main>
+<main>
+    <div class="EVC__Main-Impact-Graph__Pest">
+        <h2>Our Impact: Pest Management</h2>
+        <p>Total number of pests collected per month</p>
+
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="EVC__Main-Impact-Data__Stream">
+        <h2>Our Impact: Stream Monitoring</h2>
+        <p>The data we collect</p>
+    </div>
+</main>
 
 <!-- Footer -->
 <footer class="EVC__Footer">

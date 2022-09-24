@@ -9,6 +9,7 @@ const contact = require("./src/routes/contact.js")
 const about = require("./src/routes/about.js")
 const impact = require("./src/routes/imapct.js")
 const newsandnotices = require("./src/routes/newsandnotices.js")
+const notfound = require("./src/routes/notfound.js")
 
 app.use(express.static(path.join(__dirname+"/src/public")))
 app.use(cors())
@@ -23,6 +24,8 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname+"/src/public/templates/index.html"))
 })
 
+app.use("*", notfound)
+
 app.listen(port, () => {
-    console.log(`We are listening on port ${port}`)
+    console.log(`We are listening on port http://localhost:${port}`)
 })

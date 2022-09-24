@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--offwhite);
 }
 
@@ -40,7 +42,7 @@ body {
     display: inline-block;
     padding: 2rem;
     position: relative;
-    transition: cubic-bezier(0.9, 0, 0.4, 1) 1s;
+    transition: 0.4s ease-in-out;
 }
 
 .EVC__Header-Navbar > ul li::after {
@@ -52,7 +54,7 @@ body {
     height: 2px;
     margin: 0;
     background: var(--accent2);
-    transition: cubic-bezier(0.9, 0, 0.4, 1) 1s;
+    transition: 0.4s ease-in-out;
 }
 
 .EVC__Header-Navbar > ul li:hover {
@@ -89,7 +91,7 @@ body {
     border-radius: 0 1rem 1rem 0;
     background-color: var(--accent);
     color: var(--offwhite);
-    transition: cubic-bezier(0.9, 0, 0.4, 1) 1s;
+    transition: 0.4s ease-in-out;
     filter: opacity(0.8);
 }
 
@@ -106,6 +108,56 @@ body {
 }
 
 /* MAIN */
+/* Pest Management */
+.EVC__Main-Impact-Graph__Pest {
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0 2rem 15%;
+}
+
+.EVC__Main-Impact-Graph__Pest h2 {
+    font-size: 3.5rem;
+    margin: 0.5rem;
+}
+
+.EVC__Main-Impact-Graph__Pest p {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
+
+#myChart {
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    max-height: 700px;
+}
+
+/* Stream Management */
+.EVC__Main-Impact-Data__Stream {
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0 2rem 15%;
+}
+
+.EVC__Main-Impact-Data__Stream h2 {
+    font-size: 3.5rem;
+    margin: 0.5rem;
+}
+
+.EVC__Main-Impact-Data__Stream p {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
 
 /* Footer */
 .EVC__Footer {
@@ -131,14 +183,14 @@ body {
 
 .EVC__Footer-Col > ul li {
     margin-left: 2rem;
-    transition: cubic-bezier(0.9, 0, 0.4, 1) 1s;
+    transition: 0.4s ease-in-out;
 }
 
 .EVC__Footer-Col > ul li > a {
     color: var(--offwhite);
     font-size: 1.5rem;
     text-decoration: none;
-    transition: cubic-bezier(0.9, 0, 0.4, 1) 1s;
+    transition: 0.4s ease-in-out;
 }
 
 .EVC__Footer-Col > ul li > a:hover {
