@@ -71,6 +71,61 @@ body {
     text-decoration: none;
 }
 
+.cta {
+    display: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Side Nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000000;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.sidenav a {
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--offwhite);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--accent2);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3rem;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 /* Splash Page */
 .EVC__Header-SpalashPage {
     margin-top: 87px;
@@ -128,6 +183,13 @@ body {
     width: 60%;
     font-size: 1.4rem;
 }
+
+/* Hr */
+hr {
+    width: 90%;
+    margin-left: 5%;
+}
+
 /* Testimonials */
 .EVC__Main-Testimonials {
     display: flex;
@@ -153,7 +215,7 @@ body {
 
 .EVC__Main-Testimonial-Container {
     width: 29%;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -238,4 +300,59 @@ body {
 
 .EVC__Footer-Col-Social > ul li:hover {
     transform: translate(0, -10px);
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+@media only screen and (max-width: 1450px) {
+    .EVC__Main-Testimonials {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .EVC__Header-SpalashPage div {
+        width: 45%;
+    }
+
+    .EVC__Main-AboutUs {
+        width: 95%;
+        margin-left: 0%;
+    }
+
+    .EVC__Main-AboutUs h2 {
+        font-size: 3.5rem;
+        width: 20%;
+    }
+
+    .EVC__Main-AboutUs p {
+        width: auto;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .cta {
+        color: var(--offwhite);
+        display: block;
+        margin-right: 5%;
+        font-size: 1.7rem;
+    }
+
+    .EVC__Header-Navbar > ul {
+        display: none;
+    }
+
+    .EVC__Header-SpalashPage div {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .EVC__Header-SpalashPage div {
+        width: 100%;
+        border-radius: 0;
+    }
 }
