@@ -31,7 +31,7 @@ body {
 }
 
 .EVC__Header-Navbar > a img {
-    margin-left: 4rem;
+    margin-left: 10%;
 }
 
 .EVC__Header-Navbar > ul {
@@ -199,6 +199,7 @@ hr {
     margin: 5rem 0 5rem 5%;
     width: 90%;
     color: var(--offwhite);
+    flex-wrap: wrap;
 }
 
 .EVC__Main-Testimonials h2 {
@@ -210,7 +211,8 @@ hr {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .EVC__Main-Testimonial-Container {
@@ -242,6 +244,7 @@ hr {
     justify-content: space-evenly;
     background-color: var(--accent2);
     color: var(--offwhite);
+    flex-wrap: wrap;
 }
 
 .EVC__Footer-Col h3 {
@@ -317,20 +320,24 @@ hr {
     }
 
     .EVC__Main-AboutUs {
-        width: 95%;
-        margin-left: 0%;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .EVC__Main-AboutUs h2 {
         font-size: 3.5rem;
-        width: 20%;
+        width: 29%;
     }
 
     .EVC__Main-AboutUs p {
-        width: auto;
+        width: 69%;
         font-size: 1.1rem;
     }
 
+    .EVC__Main-Testimonials h2 {
+        font-size: 3.5rem;
+        color: var(--grey);
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -348,11 +355,67 @@ hr {
     .EVC__Header-SpalashPage div {
         width: 60%;
     }
+
+    .EVC__Main-Testimonial-Container {
+        width: 40%;
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .EVC__Footer-Col {
+        width: 50%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .EVC__Footer-Col > ul li {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .EVC__Main-AboutUs {
+        flex-direction: column;
+        width: 99%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .EVC__Main-AboutUs h2 {
+        width:  auto;
+        margin: 0;
+    }
+
+    .EVC__Main-Testimonial-Container {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .EVC__Header-SpalashPage div {
         width: 100%;
+        text-align: center;
         border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .EVC__Footer-Col {
+        width: 100%;
+    }
+    .EVC__Main-Testimonial-Container {
+        width: 100%;
+    }
+
+    .EVC__Main-Testimonials h2 {
+        font-size: 3rem;
+        color: var(--grey);
+    }
+
+    .EVC__Main-AboutUs h2 {
+        font-size: 3rem;
     }
 }
