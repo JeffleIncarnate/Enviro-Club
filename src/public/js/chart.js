@@ -23,7 +23,7 @@ new Chart("myChart", {
         legend: {display: false},
         title: {
             display: true,
-            text: "Total number of Prests caught"
+            text: "Total number of Pests caught"
         }
     }
 });

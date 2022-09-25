@@ -31,11 +31,11 @@ body {
 }
 
 .EVC__Header-Navbar > a img {
-    margin-left: 4rem;
+    margin-left: 10%;
 }
 
 .EVC__Header-Navbar > ul {
-    margin: 0 4rem 0 0;
+    margin: 0 1rem 0 0;
 }
 
 .EVC__Header-Navbar > ul li {
@@ -70,6 +70,62 @@ body {
     color: var(--offwhite);
     text-decoration: none;
 }
+
+.cta {
+    display: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Side Nav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000000;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.sidenav a {
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--offwhite);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--accent2);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3rem;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 
 /* Splash Page */
 .EVC__Header-SpalashPage {
@@ -115,7 +171,6 @@ body {
     background-color: var(--accent2);
     border-radius: 10px 3rem 10px 3rem;
     color: var(--offwhite);
-    text-align: center;
 }
 
 .EVC__Main-FormWraper h2 {
@@ -123,7 +178,6 @@ body {
 }
 
 form {
-    padding: 1rem;
     width: 70%;
     margin-left: 15%;
     display: flex;
@@ -146,7 +200,7 @@ form label {
     color: var(--offwhite);
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     border-radius: 0.1rem 0.5rem;
     border-top: none;
     border-left: none;
@@ -161,7 +215,7 @@ form textarea {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 7rem;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem 0;
     border: 2px var(--offwhite) solid;
     background: transparent;
     border-radius: 10px;
@@ -203,6 +257,7 @@ form textarea {
     justify-content: space-evenly;
     background-color: var(--accent2);
     color: var(--offwhite);
+    flex-wrap: wrap;
 }
 
 .EVC__Footer-Col h3 {
@@ -261,4 +316,77 @@ form textarea {
 
 .EVC__Footer-Col-Social > ul li:hover {
     transform: translate(0, -10px);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    .EVC__Header-SpalashPage div {
+        width: 45%;
+    }
+
+    .EVC__Main-FormWraper {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .cta {
+        color: var(--offwhite);
+        display: block;
+        margin-right: 5%;
+        font-size: 1.7rem;
+    }
+
+    .EVC__Header-Navbar > ul {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 875px) {
+    .EVC__Header-SpalashPage div {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    form {
+        width: 90%;
+        margin-left: 3.5%;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .EVC__Footer-Col {
+        width: 50%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .EVC__Footer-Col > ul li {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .EVC__Header-SpalashPage div {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .EVC__Main-FormWraper {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .EVC__Footer-Col {
+        width: 100%;
+    }
 }
