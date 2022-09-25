@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home | Enviro Club</title>
+    <link rel="stylesheet" href="../stylesheets/notfound.css"/>
+    <link
+            rel="icon"
+            href="https://www.ormiston.school.nz/images/favicon.png?v=20141117"
+    />
+    <script
+            src="https://kit.fontawesome.com/866b8b01f2.js"
+            crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/sidenav.js"></script>
 </head>
 <body>
+<!-- HEADER -->
+<header>
+    <!-- NAV BAR-->
+    <nav class="EVC__Header-Navbar">
+        <a href="#">
+            <img
+                    src="https://www.ormiston.school.nz/images/logo-inverted.png"
+                    alt="Ormiston Senior College Logo"
+            />
+        </a>
 
+        <ul>
+            <li><a href="/impact">Impact</a></li>
+            <li><a href="/newsandnotices">News and Notices</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <div class="cta">
+            <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav()" href="/impact">Impact</a>
+        <a onclick="closeNav()" href="/newsandnotices">News and Notices</a>
+        <a onclick="closeNav()" href="/about">About Us</a>
+        <a onclick="closeNav()" href="/contact">Contact</a>
+    </div>
+
+    <!-- SPLASH PAGE -->
+    <div class="EVC__Header-SpalashPage">
+        <div>
+            <h1>404</h1>
+            <p>
+                The page you are looking for does not exist.
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN DIV -->
+<main>
+
+</main>
+
+<!-- Footer -->
+<footer class="EVC__Footer">
+    <div class="EVC__Footer-Col">
+        <h3>Main</h3>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </div>
+    <div class="EVC__Footer-Col">
+        <h3>Business</h3>
+        <ul>
+            <li><a href="/impact">Impact</a></li>
+            <li><a href="/newsandnotices">Upcoming Events</a></li>
+        </ul>
+    </div>
+    <div class="EVC__Footer-Col EVC__Footer-Col-Social">
+        <h3>Social</h3>
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

@@ -3,7 +3,7 @@ let router = express.Router()
 const path = require("path")
 
 router.get("", (req, res) => {
-    res.send("bruh, it does not exist.")
+    res.sendFile(path.join(__dirname+"/../public/templates/notfound.html"))
 })
 
 module.exports = router
